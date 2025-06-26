@@ -14,6 +14,11 @@ Aunque el proyecto en equipo ya terminó, el juego sigue en desarrollo. Iré añ
 
 🛠️ En desarrollo  
 
+## Licencia
+
+Este proyecto está bajo la Licencia MIT.  
+Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
 ---------------------
 
 # Bullet Hell Game
@@ -31,3 +36,8 @@ Even though the team project is finished, I’ll keep improving the game on my o
 ## Status
 
 🛠️ In development  
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
