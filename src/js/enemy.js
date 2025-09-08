@@ -26,7 +26,7 @@ export class Enemy {
             this.opacity -= 0.01;
         
             if (!this.hasPlayedDeathSound) {
-                const bossDeadSound = new Audio('./music/enemyDead.mp3');
+                const bossDeadSound = new Audio('./assets/music/enemyDead.mp3');
                 bossDeadSound.volume = 0.9;
                 bossDeadSound.play().catch(() => {
                     console.log("De browser heeft het automatisch afspelen geblokkeerd. Interactie is vereist.");
@@ -185,7 +185,7 @@ export class Boss {
             this.health -= 10; // Reducir la salud del jefe
             
             // Reproducir el sonido de golpe del jefe (solo al recibir un golpe)
-            const bossHitSound = new Audio('./music/bossHit.mp3');
+            const bossHitSound = new Audio('./assets/music/bossHit.mp3');
             bossHitSound.volume = 0.1; // Ajusta el volumen si es necesario
             bossHitSound.play().catch(() => {
                 console.log("De browser heeft het automatisch afspelen geblokkeerd. Interactie is vereist.");

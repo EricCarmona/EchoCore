@@ -41,7 +41,7 @@ let gameOver = false;
 let score = 0;
 let shootCooldown = 0;
 let heartImage = new Image();
-heartImage.src = "./img/heart.svg";
+heartImage.src = "./assets/img/heart.svg";
 
 let showTip = true;
 let blinkStartTime = 0;
@@ -309,7 +309,7 @@ function runGame() {
             player.lives--;
             enemyBullets.splice(index, 1);
             shakeDuration = 10;
-            const hurtSound = new Audio('./music/hurt.mp3'); // Asegúrate de que el archivo esté en la ruta correcta // Make sure the file is in the correct path
+            const hurtSound = new Audio('./assets/music/hurt.mp3'); // Asegúrate de que el archivo esté en la ruta correcta // Make sure the file is in the correct path
             hurtSound.volume = 0.8; // Ajusta el volumen si es necesario // Adjust the volume if necessary
             hurtSound.play().catch(() => {
                 console.log("De browser heeft het automatisch afspelen geblokkeerd. Interactie is vereist."); // The browser blocked autoplay. Interaction is required.
@@ -409,7 +409,7 @@ document.querySelectorAll('.damage-btn, .speed-btn, .columns-btn').forEach(butto
             }, 300);
 
             // Reproducir el sonido 'nopowerups.mp3' si no tienes suficientes puntos
-            const noPowerUpSound = new Audio('./music/noPoints.mp3');
+            const noPowerUpSound = new Audio('./assets/music/noPoints.mp3');
             noPowerUpSound.volume = 0.3; // Ajusta el volumen según lo que quieras
             noPowerUpSound.play().catch(() => {
                 console.log("De browser heeft het automatisch afspelen geblokkeerd. Interactie is vereist.");
@@ -422,7 +422,7 @@ document.querySelectorAll('.damage-btn, .speed-btn, .columns-btn').forEach(butto
         upgrades[type] = nextLevel;
         document.querySelector('.points').textContent = totalPoints;
 
-        const powerUpSound = new Audio('./music/powerUps.mp3');
+        const powerUpSound = new Audio('./assets/music/powerUps.mp3');
     	powerUpSound.volume = 0.5; // Ajusta el volumen según lo que quieras
     	powerUpSound.play().catch(() => {
     	    console.log("De browser heeft het automatisch afspelen geblokkeerd. Interactie is vereist.");

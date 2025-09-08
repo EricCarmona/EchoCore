@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECHOCORE</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <meta name="description" content="ECHOCORE is a game where you control a spaceship and shoot enemies while avoiding obstacles.">
     <meta name="keywords" content="ECHOCORE, game, spaceship, shoot, enemies, obstacles">
     <meta name="author" content="Eric and Shainy">
     <meta name="theme-color" content="rgba(50, 50, 50, 0.7)">
-    <link rel="icon" href="./img/logo.png" type="logo/png">
+    <link rel="icon" href="./assets/img/logo.png" type="logo/png">
 </head>
 <body>
-    <audio id="bg-music" src="./music/soundtrack.mp3" loop autoplay></audio>
+    <audio id="bg-music" src="./assets/music/soundtrack.mp3" loop autoplay></audio>
 <!-- SECCION INICIO -- START SECTION -->
     <section id="start" class="start">
         <div class="startContainer">
@@ -42,45 +42,45 @@
             <div class="menu_powerUps">
             <ul class="list-damage"> 
                 <li class="damage-l" style="display: block;">
-                    <img src="./img/speed/speed-l.png" alt="ex.damage-l " width="42" height="42"><p>Damage-l</p>
+                    <img src="./assets/img/damage/damage-l.png" alt="ex.damage-l " width="42" height="42"><p>Damage-l</p>
                     <button class="damage-btn"><span class="max">1000</span></button>
                 </li>
                 <li class="damage-ll" style="display: none;">
-                    <img src="./img/speed/speed-ll.png" alt="ex.damage-ll" width="42" height="42"><p>Damage-ll</p>
+                    <img src="./assets/img/damage/damage-ll.png" alt="ex.damage-ll" width="42" height="42"><p>Damage-ll</p>
                     <button class="damage-btn"><span class="max">1000</span></button>
                 </li>
                 <li class="damage-lll" style="display: none;">
-                    <img src="./img/speed/speed-lll.png" alt="ex.damage-lll" width="42" height="42"><p>Damage-lll</p>
+                    <img src="./assets/img/damage/damage-lll.png" alt="ex.damage-lll" width="42" height="42"><p>Damage-lll</p>
                     <button class="damage-btn"><span class="max">1000</span></button>
                 </li>
             </ul>
 
             <ul class="list-speed">
                 <li class="speed-l" style="display: block;">
-                    <img src="./img/damage/damage-l.png" alt="ex.speed-l " width="42" height="42"><p>Speed-l</p>
+                    <img src="./assets/img/speed/speed-l.png" alt="ex.speed-l " width="42" height="42"><p>Speed-l</p>
                     <button class="speed-btn"><span class="max">1000</span></button>
                 </li>
                 <li class="speed-ll" style="display: none;">
-                    <img src="./img/damage/damage-ll.png" alt="ex.speed-ll" width="42" height="42"><p>Speed-ll</p>
+                    <img src="./assets/img/speed/speed-ll.png" alt="ex.speed-ll" width="42" height="42"><p>Speed-ll</p>
                     <button class="speed-btn"><span class="max">1000</span></button>
                 </li>
                 <li class="speed-lll" style="display: none;">
-                    <img src="./img/damage/damage-lll.png" alt="ex.speed-lll" width="42" height="42"><p>Speed-lll</p>
+                    <img src="./assets/img/speed/speed-lll.png" alt="ex.speed-lll" width="42" height="42"><p>Speed-lll</p>
                     <button class="speed-btn"><span class="max">1000</span></button>
                 </li>
             </ul>
             
             <ul class="list-columns">
                 <li class="columns-l" style="display: block;">
-                    <img src="./img/columns/column_l.png" alt="ex.columns-l " width="42" height="42"><p>Columns-l</p>
+                    <img src="./assets/img/column/column_l.png" alt="ex.columns-l " width="42" height="42"><p>Columns-l</p>
                     <button class="columns-btn"><span class="max">1000</span></button>
                 </li>
                 <li class="columns-ll" style="display: none;">
-                    <img src="./img/columns/column_ll.png" alt="ex.columns-ll" width="42" height="42"><p>Columns-ll</p>
+                    <img src="./assets/img/column/column_ll.png" alt="ex.columns-ll" width="42" height="42"><p>Columns-ll</p>
                     <button class="columns-btn"><span class="max">1000</span></button>
                 </li>
                 <li class="columns-lll" style="display: none;">
-                    <img src="./img/columns/column_lll.png" alt="ex.columns-lll" width="42" height="42"><p>Columns-lll</p>
+                    <img src="./assets/img/column/column_lll.png" alt="ex.columns-lll" width="42" height="42"><p>Columns-lll</p>
                     <button class="columns-btn"><span class="max">1000</span></button>
                 </li>
             </ul>            
@@ -92,6 +92,6 @@
     <section id="game" class="game" style="display: none;">
         <canvas id="gameCanvas"></canvas>
     </section>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

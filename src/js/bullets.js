@@ -14,7 +14,7 @@ export class Bullet {
     }
 
     playShootSound() {
-        const shootSound = new Audio('./music/shoot.mp3'); // Asegúrate de que el archivo de sonido esté en la ruta correcta // Make sure the sound file is in the correct path
+        const shootSound = new Audio('./assets/music/shoot.mp3'); // Asegúrate de que el archivo de sonido esté en la ruta correcta // Make sure the sound file is in the correct path
         shootSound.volume = 0.1; // Ajusta el volumen como desees // Adjust the volume as desired
         shootSound.play().catch(() => {
             console.log("De browser heeft het automatisch afspelen geblokkeerd. Interactie is vereist."); // El navegador bloqueó el autoplay. Necesita interacción. // The browser blocked autoplay. Interaction is required.
